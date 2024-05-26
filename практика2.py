@@ -61,7 +61,7 @@ rgb[~mask] = 1
 
 plt.figure(figsize=(10, 10))
 plt.imshow(rgb, extent=[-2, 2, -2, 2])
-plt.title('Domain Coloring of D2 using HSL')
+plt.title('Прообраз розы')
 plt.axis('off')
 plt.show()
 
@@ -90,6 +90,6 @@ rgb_w[~mask_w] = 1
 
 plt.figure(figsize=(10, 10))
 plt.imshow(rgb_w, extent=[-3, 3, -3, 3])
-plt.title('Conformal Map of D2 using g(z) with HSL Coloring (Mirrored Mask)')
+plt.title('Образ розы')
 plt.axis('off')
 plt.show()
