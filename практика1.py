@@ -49,3 +49,24 @@ plt.ylim(-10, 10)
 
 plt.tight_layout()
 plt.show()
+
+theta_z = np.angle(z)
+rho_z = np.abs(z)
+
+theta_w = np.angle(w)
+rho_w = np.abs(w)
+
+fig, ax = plt.subplots(1, 2, subplot_kw={'projection': 'polar'}, figsize=(14, 7))
+
+ax[0].plot(theta_z, rho_z, label='Прообраз розы')
+ax[0].set_title('Прообраз розы в полярной системе')
+ax[0].legend()
+ax[0].grid(True)
+
+ax[1].plot(theta_w, rho_w, label='Образ розы', color='r')
+ax[1].set_title('Образ розы в полярной системе')
+ax[1].legend()
+ax[1].grid(True)
+
+plt.tight_layout()
+plt.show()
